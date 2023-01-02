@@ -50,6 +50,7 @@ class LoginActivity : AppCompatActivity() {
         if (email.text.isEmpty() || password.text.isEmpty()){
             Toast.makeText(this,"Please fill all fields", Toast.LENGTH_SHORT)
                 .show()
+            progressDialog.dismiss()
             return
         }
         val inputEmail = email.text.toString()
